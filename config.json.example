@@ -1,0 +1,21 @@
+{
+  "vision": {
+    "baseUrl": "http://localhost:8080/v1",
+    "model": "qwen3.6-27B"
+  },
+  "embedding": {
+    "baseUrl": "http://localhost:8090/v1",
+    "model": "nomic-embed-text"
+  },
+  "calibre": {
+    "opdsUrl": "http://127.0.0.1:8080"
+  },
+  "jellyfin": {
+    "baseUrl": "http://localhost:8096",
+    "apiKey": ""
+  },
+  "scene_detect": {
+    "venvPath": "",
+    "pythonBinary": "python3.12"
+  }
+}

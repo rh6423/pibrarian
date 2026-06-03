@@ -1,0 +1,25 @@
+{
+  "name": "pibrarian",
+  "version": "0.1.7",
+  "description": "Multi-domain content library extension for pi (books, comics, movies, tv)",
+  "keywords": [
+    "pi-package"
+  ],
+  "license": "Apache-2.0",
+  "dependencies": {
+    "sharp": "^0.34.5",
+    "typebox": "^1.1.39"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "pi": {
+    "extensions": [
+      "./src/index.ts"
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.1",
+    "typescript": "^6.0.3"
+  }
+}
