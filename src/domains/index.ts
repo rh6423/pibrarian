@@ -1,6 +1,6 @@
 import type { ToolDefinition } from "@earendil-works/pi-coding-agent";
 import type { PibrarianConfig } from "../config";
-import { booksTools } from "./books";
+import { createBooksTools } from "./books";
 import { createExtractPanelsTool, comicsPlaceholderTools } from "./comics";
 import { createMediaTools } from "./media";
 
@@ -27,8 +27,8 @@ export function buildDomains(
   domains.set("books", {
     name: "books",
     label: "Books",
-    description: "Ebook library (Calibre) — search, read, metadata",
-    tools: booksTools,
+    description: "Ebook library (Calibre) — search, browse, read, metadata",
+    tools: createBooksTools(cfg.calibre, defaultDownloadDir),
   });
 
   domains.set("comics", {

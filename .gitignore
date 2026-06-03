@@ -1,4 +1,3 @@
 node_modules/
 config.json
-*.tgz
-package-lock.json
+docs/archive/

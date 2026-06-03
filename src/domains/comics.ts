@@ -98,7 +98,6 @@ async function cropPanel(
   const trimmed = await sharp(cropped)
     .trim({
       background: { r: 250, g: 250, b: 250 },
-      tolerance: { r: 15, g: 15, b: 15 },
       threshold: 500,
     })
     .toBuffer();

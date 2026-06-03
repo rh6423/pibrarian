@@ -365,10 +365,8 @@ export function formatItemLine(item: JellyfinItem): string {
   const rating = item.CommunityRating
     ? item.CommunityRating.toFixed(1)
     : "";
-  const played =
-    item.UserData?.PlayedPercentage > 0
-      ? ` [${item.UserData.PlayedPercentage}%]`
-      : "";
+  const playedPct = item.UserData?.PlayedPercentage;
+  const played = playedPct && playedPct > 0 ? ` [${playedPct}%]` : "";
   const parent = item.SeriesName || "";
 
   let line = `  ${item.Id}  ${item.Name}`;

@@ -8,7 +8,9 @@
     "model": "nomic-embed-text"
   },
   "calibre": {
-    "opdsUrl": "http://127.0.0.1:8080"
+    "opdsUrl": "http://127.0.0.1:8080",
+    "username": "",
+    "password": ""
   },
   "jellyfin": {
     "baseUrl": "http://localhost:8096",

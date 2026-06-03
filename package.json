@@ -1,6 +1,6 @@
 {
   "name": "pibrarian",
-  "version": "0.1.7",
+  "version": "0.1.6",
   "description": "Multi-domain content library extension for pi (books, comics, movies, tv)",
   "keywords": [
     "pi-package"

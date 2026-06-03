@@ -15,11 +15,11 @@ Multi-domain content library extension for [pi](https://pi.dev). Integrates with
 ## Features
 
 ### Books (Calibre)
-- Search ebooks by title, author, or semantic content
-- Get book metadata and details
-- Read chapters from ebooks
-
-> **Status:** Placeholder tools. Calibre OPDS integration pending.
+- **Search** ebooks by title, author, keyword, or description
+- **Browse** library sorted by title, author, or tag
+- **Get details** — full metadata including authors, series, tags, formats
+- **Download** ebooks (EPUB, MOBI, PDF, etc.) to local disk
+- **Read chapters** from EPUB files — list chapters, read by number or title
 
 ### Comics
 - Extract individual panels from comic book pages using vision model
@@ -79,6 +79,8 @@ cp config.json.example config.json
 | `embedding` | `baseUrl` | OpenAI-compatible embeddings endpoint |
 | | `model` | Embedding model ID (e.g. `nomic-embed-text`) |
 | `calibre` | `opdsUrl` | Calibre OPDS web server URL |
+| | `username` | Calibre Content Server username (optional) |
+| | `password` | Calibre Content Server password (optional) |
 | `jellyfin` | `baseUrl` | Jellyfin server URL |
 | | `apiKey` | Jellyfin API key (optional) |
 | `scene_detect` | `venvPath` | Path to Python venv with `scenedetect[opencv]` (optional) |
@@ -93,6 +95,8 @@ cp config.json.example config.json
 | `PIBRARIAN_EMBEDDING_BASE_URL` | embedding.baseUrl |
 | `PIBRARIAN_EMBEDDING_MODEL` | embedding.model |
 | `PIBRARIAN_CALIBRE_URL` | calibre.opdsUrl |
+| `PIBRARIAN_CALIBRE_USERNAME` | calibre.username |
+| `PIBRARIAN_CALIBRE_PASSWORD` | calibre.password |
 | `PIBRARIAN_JELLYFIN_URL` | jellyfin.baseUrl |
 | `PIBRARIAN_JELLYFIN_API_KEY` | jellyfin.apiKey |
 | `PIBRARIAN_JELLYFIN_USER_ID` | jellyfin.userId |

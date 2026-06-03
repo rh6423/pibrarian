@@ -20,6 +20,8 @@ export interface EmbeddingConfig {
 
 export interface CalibreConfig {
   opdsUrl: string;
+  username?: string;
+  password?: string;
 }
 
 export interface JellyfinConfig {
@@ -115,6 +117,8 @@ export function resolveCalibreConfig(): CalibreConfig {
 
   return {
     opdsUrl: process.env.PIBRARIAN_CALIBRE_URL ?? file.opdsUrl ?? "http://127.0.0.1:8080",
+    username: process.env.PIBRARIAN_CALIBRE_USERNAME ?? file.username ?? undefined,
+    password: process.env.PIBRARIAN_CALIBRE_PASSWORD ?? file.password ?? undefined,
   };
 }
 

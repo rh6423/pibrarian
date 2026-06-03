@@ -1,0 +1,6 @@
+# Runtime only — dev files excluded from npm publish
+node_modules/
+config.json
+*.tsbuildinfo
+*.tgz
+docs/archive/
